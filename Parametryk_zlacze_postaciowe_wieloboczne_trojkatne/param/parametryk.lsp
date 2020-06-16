@@ -1,16 +1,16 @@
-;;;;;;;; ZLACZE WIELOBOCZNE TR覬K?TKATNE ;;;;;;;
+;;;;;;;; ZLACZE WIELOBOCZNE TR脫JKATKATNE ;;;;;;;
 ;Kamil Martenczuk Autodesk Authorized Developer;
 ;;;;;;;;;;;;;; ADN ID DEPL2710 ;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;; 05/2020 ;;;;;;;;;;;;;;;;;;;;; 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;Przeliczenia kat體
+;Przeliczenia kat贸w
 (defun kat (w) (* pi (/ w 180.0)))
 (defun katWew (w) (* pi (/ (- 180.0 w) 180.0))) 
 ;Deklaracja funkcji
 (defun trojk ()
   (setvar 'osmode 0)
-;Menu wyb髍 srednicy zlacza
+;Menu wyb贸r srednicy zlacza
   (initget 1 "30 35 40 45 50 55 60 65 70 75")
   (setq d (getreal "\nPodaj srednice zlacza d (mm)[30/35/40/45/50/55/60/65/70/75]: "))
 ;Wgranie tablicy
@@ -38,7 +38,7 @@
   ;Deklaracja P0
   (setq p0 (getpoint "\nWskaz punkt wstawienia widoku: "))
   (command "_.zoom" "_w" (polar p0 (kat 225) 100) (polar p0 (kat 45) 100))
-  ;Wyznaczanie punkt體
+  ;Wyznaczanie punkt贸w
   (command "_.layer" "_s" "0" "_lw" "0.3" "0" "")
   (setq p1 (polar p0 (kat 90) r2))
   (setq p2 (polar p0 (kat -90) r2))
@@ -71,13 +71,13 @@
   (cond ((= wid2 "Tak")
 	 ;Deklaracja dlugosci
 	 (setq l (getreal "\nPodaj dlugosc (mm): "))
-	 ;Rekonfiguracja punkt體 pierwotnych
+	 ;Rekonfiguracja punkt贸w pierwotnych
 	 (setq p5 (polar p0 (kat 90) (* 1.5 r1)))
 	 (setq p6 (polar p0 (kat -90) (* 1.5 r1)))
 	 (setq p7 (polar p0 (kat 90) (* skala 7.93)))
 	 (setq p8 (polar p0 (kat -90) r2))
 	 (setq p9 (polar p0 (kat 90) r1))
-	 ;Wyznaczenie punkt體
+	 ;Wyznaczenie punkt贸w
 	 (setq p10 (polar p0 (kat -90) r1))
 	 (setq p11 (polar p5 (kat 0) (* 1.4 d3)))
 	 (setq p12 (polar p6 (kat 0) (* 1.4 d3)))
