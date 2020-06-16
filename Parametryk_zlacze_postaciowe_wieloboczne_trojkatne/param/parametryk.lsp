@@ -1,4 +1,4 @@
-;;;;;;;; ZLACZE WIELOBOCZNE TRÓJKATKATNE ;;;;;;;
+;;;;;;;;; ZLACZE WIELOBOCZNE TRÓJKATNE ;;;;;;;;;
 ;Kamil Martenczuk Autodesk Authorized Developer;
 ;;;;;;;;;;;;;; ADN ID DEPL2710 ;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;; 05/2020 ;;;;;;;;;;;;;;;;;;;;; 
