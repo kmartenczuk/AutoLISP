@@ -12,7 +12,7 @@
   (setvar 'osmode 0)
 ;Menu wybór srednicy zlacza
   (initget 1 "30 35 40 45 50 55 60 65 70 75")
-  (setq d (getreal "\nPodaj srednic? z??cza d (mm)[30/35/40/45/50/55/60/65/70/75]: "))
+  (setq d (getreal "\nPodaj srednice zlacza d (mm)[30/35/40/45/50/55/60/65/70/75]: "))
 ;Wgranie tablicy
   (setq zlacza (open (strcat kxx "tablice/parametryk_zlacza_dane.txt") "r"))
   (setq linia (read-line zlacza))
@@ -36,7 +36,7 @@
   (setq r1 (/ d2 2))
   (setq r2 (/ d3 2))
   ;Deklaracja P0
-  (setq p0 (getpoint "\nWska? punkt wstawienia widoku: "))
+  (setq p0 (getpoint "\nWskaz punkt wstawienia widoku: "))
   (command "_.zoom" "_w" (polar p0 (kat 225) 100) (polar p0 (kat 45) 100))
   ;Wyznaczanie punktów
   (command "_.layer" "_s" "0" "_lw" "0.3" "0" "")
@@ -67,10 +67,10 @@
   (command "_.layer" "_s" "0" "")
   ;Wstawianie widoku 2
   (initget 1 "Tak Nie")
-  (setq wid2 (getkword "\nWstawi? kolejny widok? [Tak/Nie]: "))
+  (setq wid2 (getkword "\nCzy wstawic kolejny widok? [Tak/Nie]: "))
   (cond ((= wid2 "Tak")
 	 ;Deklaracja dlugosci
-	 (setq l (getreal "\nPodaj d?ugo?? (mm): "))
+	 (setq l (getreal "\nPodaj dlugosc (mm): "))
 	 ;Rekonfiguracja punktów pierwotnych
 	 (setq p5 (polar p0 (kat 90) (* 1.5 r1)))
 	 (setq p6 (polar p0 (kat -90) (* 1.5 r1)))
