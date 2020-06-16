@@ -1,0 +1,16 @@
+;;; VLisp project file [V2.0] Parametryk saved to:[c:\Users\CadCenter Polska\Desktop\Projekty\AutoLISP] at:[16.06.2020]
+(VLISP-PROJECT-LIST 
+  :NAME
+  Parametryk
+  :OWN-LIST
+  ("c:/Users/CadCenter Polska/Desktop/Projekty/AutoLISP/Parametryk_zlacze_postaciowe_wieloboczne_trojkatne/param/parametryk" )
+  :FAS-DIRECTORY
+  nil
+  :TMP-DIRECTORY
+  nil
+  :PROJECT-KEYS
+  (:BUILD (:standard))
+  :CONTEXT-ID
+  :AUTOLISP
+)
+;;; EOF

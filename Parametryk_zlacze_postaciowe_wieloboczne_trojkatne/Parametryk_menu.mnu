@@ -1,0 +1,6 @@
+***MENUGROUP=MECHANICAL
+***POP12
+[Trojkat]
+[Ustawienia] (setq kxx "d:/Parametryk_zlacze_postaciowe_wieloboczne_trojkatne/")
+[Zapis]^C^C(load (strcat kxx "param/parametryk"))
+[Unload]
